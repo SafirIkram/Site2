@@ -1,0 +1,15 @@
+# Query: grid2row
+# Flags: RegExp
+# ContextLines: 1
+
+2 results - 2 files
+
+index.html:
+  25          </div>
+  26:         <div class="nav_rigth">
+  27       
+
+style.css:
+  160  
+  161: .nav_rigth {
+  162      background: #fff;

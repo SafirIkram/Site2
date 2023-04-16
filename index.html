@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance_Copy</title>
+    <link rel="icon" href="image/Profile (1).jpg" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="navleft">
+            <div class="logo">
+                <img src="image/logo-removebg-preview.png" alt="">
+            </div>
+            <div id="text_logo">
+                <h1>Finance</h1>
+            </div>
+        </div>
+        <div class="nav_rigth">
+
+            <div class="flefbox3">
+                <div class="inputshearch">
+                    <button onclick="clearInput()"><img src="image/search.svg" alt="shearchicon"></button>
+                    <input type="search" id="myInput" placeholder="Search here..">
+                </div>
+                <div class="icon">
+                    <img src="image/notification32px.png" alt="notificationicon" id="notification">
+                    <img src="image/chat-comment-oval-speech-bubble-with-text-lines.png" alt="contacttexticon" id="contacttext">
+                    <div class="hollderimg">
+                        <div class="imagecover">
+                            <div class="coverimage">
+                                <div class="contact">
+                                    <img src="image/profile (1).jpg" alt="profileicon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="left_body">
+            <div class="nays">
+                <div class="قائمة_اختيارات">
+
+                    <ul>
+
+                        <li>
+                            <i class="feat-زر_الضغط">Dashoard
+                            </i>
+                            <ul class="feat-اظهار">
+                                <li><a href="#">Classic</a></li>
+                                <li><a href="#">Minimal</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i href="#" class="serv-زر_الضغط">Pages
+        
+                            </i>
+                            <ul class="serv-اظهار">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Register</a></li>
+                                <li><a href="#">Forget Password</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i href="#" class="زر_الضغط4">Application
+        
+                            </i>
+                            <ul class="اظهار4">
+                                <li><a href="#">Mail Box</a></li>
+                                <li><a href="#">Chat</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i href="#" class="زر_الضغط1">UI Component
+        
+                            </i>
+                            <ul class="اظهار01">
+                                <li><a href="#">Element</a></li>
+                                <li><a href="#">Copontsr</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i href="#" class="زر_الضغط2">Forms
+        
+                            </i>
+                            <ul class="اظهار2">
+                                <li><a href="#">Element</a></li>
+                                <li><a href="#">Widgets</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i href="#" class="زر_الضغط3">Charts
+        
+                            </i>
+                            <ul class="اظهار3">
+                                <li><a href="#">ChatJS</a></li>
+                                <li><a href="#">Apex Charts</a></li>
+                                <li><a href="#">chart sparkline</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="right_body">
+            <!-- first2colomn -->
+            <div class="first2colomn">
+                <div class="firstمستطيل">
+                    <div class="textposition">
+                        <h3>Total Income</h3>
+                        <div class="textwithjava1">
+                            <h1 id="n1">$ 579,000</h1>
+                        </div>
+                        <h5>Saved <i class="p">%55</i></h5>
+                    </div>
+                </div>
+                <div class="secondمستطيل">
+                    <div class="textposition">
+                        <h3>Total Expences</h3>
+                        <div class="textwithjava2">
+                            <h1 id="n2">$ 79,000</h1>
+                        </div>
+                        <h5>Saved <i class="p">%55</i></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secend2colomn">
+                <div class="thirdمستطيل">
+                    <div class="textposition">
+                        <h3>Cash on Hand</h3>
+                        <div class="textwithjava3">
+                            <h1 id="n3">$ 92,000</h1>
+                        </div>
+                        <h5>Saved <i class="p">%55</i></h5>
+                    </div>
+                </div>
+                <div class="fourthمستطيل">
+                    <div class="textposition">
+                        <h3>Net Profit Margin</h3>
+                        <div class="textwithjava4">
+                            <h1 id="n4">$ 179,000</h1>
+                        </div>
+                        <h5>Saved <i class="p">%55</i></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="end2colomn">
+                <!--  chmp desig -->
+                <div class="fifthمستطيل">
+                    <div class="charts">
+                        <div class="chart">
+                            <h1 id="text3">AP and AR Balance</h1>
+                            <h5>Avg $15,309</h5>
+                            <canvas id="lineChart" width="450" height="450"></canvas>
+                        </div>
+                        <div class="chart " id="doughnut-chart ">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Two Circle -->
+                <div class="sixthمستطيل ">
+                    <div class="leftcircle ">
+                        <h3 class="text2 ">$ of Income Budget</h3>
+                        <div class="circle1 ">
+
+                            <div class="skill ">
+                                <div class="outer ">
+                                    <div class="inner ">
+                                        <div class="text ">
+                                            <div id="number">67%
+                                                <h3 id="textc1 ">Budget</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <svg xmlns="http://www.w3.org/2000/svg " version="1.1 " width="160px " height="160px ">
+                                <defs>
+                                   <lineargradient id="GradientColor">
+                                    <stop offset="0% " stop-color="#darkgreen" />
+                                    <stop offset="100% " stop-color="gold" />
+                                   </lineargradient>
+                                </defs>
+                                <circle cx="80 " cy="80 " r="70 " stroke-linecap="round" id="circle1"/>
+                            </svg>
+                                <div class="textskils ">
+                                    <div class="testskills_left ">
+                                        <div class="imgcircle "><img src="logo/circle-solid.svg " alt=" " width="20px "></div>
+                                        <h2 class="prix ">-$118,570</h2>
+                                    </div>
+                                    <div class="textskils_rigth ">
+                                        <div class="imgcircle "><img src="logo/circle-solid-green.svg " alt=" " width="20px "></div>
+                                        <h2 class="prix ">$131,430</h2>
+
+                                    </div>
+                                </div>
+                                <div class="line "></div>
+                                <div class="links "><a href="# ">View Full Report</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="rithghcircle ">
+                        <h3 class="text2">$ of Income Budget</h3>
+                        <div class="circle2 ">
+
+
+                            <div class="skill1 ">
+                                <div class="outer1 ">
+                                    <div class="inner1 ">
+                                        <div class="text1">
+                                            <div id="number1">48%
+                                                <h3 id="textc2">Profit</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <svg xmlns="http://www.w3.org/2000/svg " version="3.5 " width="160px " height="160px ">
+                                <defs>
+                                   <lineargradient id="GradientColor1">
+                                      <stop offset="0% " stop-color="#ccc" />
+                                      <stop offset="100% " stop-color="#ffc" />
+                                   </lineargradient>
+                                </defs>
+                                <circle cx="80 " cy="80 " r="70 " stroke-linecap="round" id="circle2"/>
+                            </svg>
+                                <div class="textskils ">
+                                    <div class="testskills_left ">
+                                        <div class="imgcircle "><img src="logo/circle-solid-green.svg " alt=" " width="20px "></div>
+                                        <h2 class="prix ">-$118,570</h2>
+                                    </div>
+                                    <div class="textskils_rigth ">
+                                        <div class="imgcircle "><img src="logo/circle-solid.svg " alt=" " width="20px "></div>
+                                        <h2 class="prix ">$131,430</h2>
+                                    </div>
+                                </div>
+                                <div class="line "></div>
+                                <div class="links "><a href="# ">View Full Report</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js "></script>
+    <!-- رسم بياني -->
+    <script>
+        /*
+                                                                'line': for line charts.
+                                                                'bar': for bar charts.
+                                                                'horizontalBar': for horizontal bar charts.
+                                                                'radar': for radar charts.
+                                                                'doughnut': for doughnut charts.
+                                                                'polarArea': for polar area charts.
+                                                                'bubble': for bubble charts.
+                                                                'scatter': for scatter charts.
+                                                                'area': for area charts (added in version 3.6).
+                                                                 */
+        var ctx = document.getElementById('lineChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Amine', 'Mohamed', 'Hamza', 'Sara', 'Said dine'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [8200, 1220, 3020, 4200, 2000],
+                    backgroundColor: [
+                        '#aaa',
+                        '#fff',
+                        'red',
+                        'whait',
+                        'blue',
+                        'darkgreen'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: false
+                    }
+                },
+                responsive: false
+            }
+        });
+    </script>
+    <!-- الدوائر -->
+    <script>
+        let Number = document.getElementById("number");
+        let j = 0;
+        setInterval(() => {
+            if (j == 67)
+                clearInterval();
+
+            else {
+                ++j;
+                Number.innerHTML = j + "% ";
+            }
+        }, 30);
+        let Number1 = document.getElementById("number1");
+        let i = 0;
+        setInterval(() => {
+            if (i == 48)
+                clearInterval();
+            else {
+                ++i;
+                Number1.innerHTML = i + "% ";
+            }
+        }, 30);
+        let N1 = document.getElementById("n1");
+        let q = 0;
+        setInterval(() => {
+            if (q == 5780) {
+                clearInterval();
+
+            } else {
+                q = q + 1;
+                N1.innerHTML = "$ " + q;
+            }
+        }, 10);
+        let N2 = document.getElementById("n2");
+        let q1 = 0;
+        setInterval(() => {
+            if (q1 == 7900)
+                clearInterval();
+            else {
+                q1 = q1 + 1;
+                N2.innerHTML = "$ " + q1;
+            }
+        }, 10);
+        let N3 = document.getElementById("n3");
+        let q3 = 0;
+        setInterval(() => {
+            if (q3 == 9200)
+                clearInterval();
+            else {
+                q3 += 1;
+                N3.innerHTML = "$ " + q3;
+            }
+        }, 10);
+        let N4 = document.getElementById("n4");
+        let q4 = 0;
+        setInterval(() => {
+            if (q4 == 17900)
+                clearInterval();
+            else {
+                q4 += 1;
+                N4.innerHTML = "$ " + q4;
+            }
+        }, 10);
+        let N5 = document.getElementsByClassName("p").value;
+        let q5 = 0;
+        setInterval(() => {
+            if (q5 == 55)
+                clearInterval();
+            else {
+                q5 += 1;
+                N5.innerHTML = q5 + "%";
+            }
+        }, 10);
+
+        function clearInput() {
+            document.getElementById("myInput").value = "";
+        }
+    </script>
+    <!--  For SubBar -->
+    <script>
+        $('.زر_الضغط').click(function() {
+            $(this).toggleClass("click");
+            $('.قائمة_اختيارات').toggleClass("اظهار");
+        });
+        $('.feat-زر_الضغط').click(function() {
+            $('.قائمة_اختيارات ul .feat-اظهار').toggleClass("اظهار");
+            $('.قائمة_اختيارات ul .first').toggleClass("rotate");
+        });
+        $('.serv-زر_الضغط').click(function() {
+            $('.قائمة_اختيارات ul .serv-اظهار').toggleClass("اظهار1");
+            $('.قائمة_اختيارات ul .second').toggleClass("rotate");
+        });
+        $('.زر_الضغط1').click(function() {
+            $('.قائمة_اختيارات ul .اظهار01').toggleClass("اظهار1");
+            $('.قائمة_اختيارات ul .second').toggleClass("rotate");
+        });
+        $('.زر_الضغط2').click(function() {
+            $('.قائمة_اختيارات ul .اظهار2').toggleClass("اظهار1");
+            $('.قائمة_اختيارات ul .second').toggleClass("rotate");
+        });
+        $('.زر_الضغط3').click(function() {
+            $('.قائمة_اختيارات ul .اظهار3').toggleClass("اظهار1");
+            $('.قائمة_اختيارات ul .second').toggleClass("rotate");
+        });
+        $('.زر_الضغط4').click(function() {
+            $('.قائمة_اختيارات ul .اظهار4').toggleClass("اظهار1");
+            $('.قائمة_اختيارات ul .second').toggleClass("rotate");
+        });
+        $('.زر_الضغط5').click(function() {
+            $('.contact ul .اظهار5').toggleClass("اظهار5");
+            $('.contact ul .second').toggleClass("rotate");
+
+        });
+
+        $('.navs ul li').click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+</body>
+
+
+</html>
+
+
+
+
+<!-- 
+
+        color site:
+
+        /* CSV */
+7dc6d4,f4fafa,9e72cc,4473e3,abbfd1,847774,ccd8de,cab3d9,eac8b9
+
+/* Array */
+["7dc6d4 ","f4fafa ","9e72cc ","4473e3 ","abbfd1 ","847774 ","ccd8de ","cab3d9 ","eac8b9 "]
+
+
+     -->
